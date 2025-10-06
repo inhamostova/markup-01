@@ -4,59 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Markup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <a href="./index.html">WebStudio</a>
+      <a class="logo link" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
       <nav>
-        <ul>
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="./portfolio.html">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
+        <ul class="list">
+          <li><a class="nav-link nav-link-accent link" href="./index.html">Студія</a></li>
+          <li><a class="nav-link link" href="./portfolio.html">Портфоліо</a></li>
+          <li><a class="nav-link link" href="">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="list">
+        <li><a class="contact-link contact-link-accent link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
 
     <!-- Main -->
     <main>
       <!-- Hero section -->
-      <section>
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+      <section class="hero">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero-btn" type="button">Замовити послугу</button>
       </section>
 
       <!-- Advantages section -->
       <section>
         <h2 hidden>Advantages</h2>
-        <ul>
+        <ul class="list">
           <li>
-            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>
+            <h3 class="advantages-title title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="advantages-txt">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li>
-            <h3>ПУНКТУАЛЬНІСТЬ</h3>
-            <p>
+            <h3 class="advantages-title title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="advantages-txt">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
           <li>
-            <h3>ПЛАНУВАННЯ</h3>
-            <p>
+            <h3 class="advantages-title title">ПЛАНУВАННЯ</h3>
+            <p class="advantages-txt">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li>
-            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>
+            <h3 class="advantages-title title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="advantages-txt">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -66,8 +73,8 @@
 
       <!-- Portfolio section -->
       <section>
-        <h2>Чим ми займаємося</h2>
-        <ul>
+        <h2 class="portfolio-title title">Чим ми займаємося</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/portfolio/box-1.jpg"
@@ -97,8 +104,8 @@
 
       <!-- Team section -->
       <section>
-        <h2>Наша команда</h2>
-        <ul>
+        <h2 class="team-title title">Наша команда</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/team/team-member-1.jpg"
@@ -106,8 +113,8 @@
               width="270"
               height="260"
             />
-            <h3>Ігор Дем'яненко</h3>
-            <p>Product Designer</p>
+            <h3 class="member-name">Ігор Дем'яненко</h3>
+            <p class="member-txt">Product Designer</p>
           </li>
           <li>
             <img
@@ -116,8 +123,8 @@
               width="270"
               height="260"
             />
-            <h3>Ольга Рєпіна</h3>
-            <p>Frontend Developer</p>
+            <h3 class="member-name">Ольга Рєпіна</h3>
+            <p class="member-txt">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -126,8 +133,8 @@
               width="270"
               height="260"
             />
-            <h3>Микола Тарасов</h3>
-            <p>Marketing</p>
+            <h3 class="member-name">Микола Тарасов</h3>
+            <p class="member-txt">Marketing</p>
           </li>
           <li>
             <img
@@ -136,8 +143,8 @@
               width="270"
               height="260"
             />
-            <h3>Михайло Єрмаков</h3>
-            <p>UI Designer</p>
+            <h3 class="member-name">Михайло Єрмаков</h3>
+            <p class="member-txt">UI Designer</p>
           </li>
         </ul>
       </section>
