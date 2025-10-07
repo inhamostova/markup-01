@@ -29,7 +29,7 @@ body {
 
 /* Header */
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   color: var(--black-color);
@@ -40,7 +40,7 @@ body {
 }
 
 .nav-link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   letter-spacing: 0.28px;
   color: var(--main-color);
@@ -51,7 +51,7 @@ body {
 }
 
 .contact-link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   letter-spacing: 0.28px;
   color: var(--txt-color);
@@ -69,7 +69,7 @@ body {
 .hero-title {
   font-size: 44px;
   line-height: calc(60 / 44);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   letter-spacing: 2.64px;
   text-transform: uppercase;
@@ -80,7 +80,7 @@ body {
 .hero-btn {
   font-size: 16px;
   line-height: calc(30 / 16);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   letter-spacing: 0.96px;
   text-align: center;
@@ -92,7 +92,7 @@ body {
 /* Advantages section */
 
 .advantages-title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.42px;
@@ -101,7 +101,7 @@ body {
 
 .advantages-txt {
   line-height: calc(24 / 14);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.42px;
   color: var(--txt-color);
 }
@@ -110,7 +110,7 @@ body {
 .portfolio-title,
 .team-title {
   font-size: 36px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   letter-spacing: 1.08px;
   color: var(--main-color);
@@ -120,7 +120,7 @@ body {
 /* Team section */
 .member-name {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   letter-spacing: 0.48px;
   color: var(--main-color);
@@ -128,7 +128,7 @@ body {
 
 .member-txt {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.48px;
   color: #757575;
 }
@@ -144,7 +144,7 @@ body {
 
 .address {
   line-height: calc(24 / 14);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   letter-spacing: 0.42px;
   color: var(--white-color);
@@ -152,7 +152,7 @@ body {
 
 .footer-contact {
   line-height: calc(24 / 14);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.42px;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -162,9 +162,9 @@ body {
 /* -----!!!!!------ */
 
 .filter-btn {
-    font-size: 16px;
+  font-size: 16px;
   line-height: calc(26 / 16);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   letter-spacing: 0.48px;
   color: var(--main-color);
@@ -177,18 +177,18 @@ body {
 }
 
 .item-title {
-    font-size: 18px;
+  font-size: 18px;
   line-height: calc(36 / 18);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   letter-spacing: 1.08px;
   color: var(--main-color);
 }
 
 .item-txt {
-    font-size: 16px;
+  font-size: 16px;
   line-height: calc(30 / 16);
-  font-family: "Roboto", sans-serif;
-    letter-spacing: 0.48px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.48px;
   color: var(--txt-color);
 }
