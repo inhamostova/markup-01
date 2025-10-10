@@ -7,6 +7,10 @@
   --black-color: #000000;
   --bg-grey: #f5f4fa;
   --border-cl: #ececec;
+
+  /* Grid */
+  --indent: 30px;
+  --items: 3;
 }
 
 /* Basic */
@@ -172,7 +176,7 @@ address {
 
 .advantages-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 .advantages-title {
@@ -205,7 +209,7 @@ address {
 
 .portfolio-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 /* Team section */
@@ -215,7 +219,7 @@ address {
 
 .team-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 .team-item {
@@ -324,12 +328,12 @@ address {
 
 .card-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
   flex-wrap: wrap;
 }
 
 .card-item {
-  flex-basis: calc((100% - 2 * 30px) / 3);
+  flex-basis: calc((100% - (var(--items)-1) * 30px) / var(--items));
 }
 
 .card-wrapper {
