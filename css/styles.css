@@ -13,6 +13,9 @@
   /* Grid */
   --indent: 30px;
   --items: 3;
+
+  /* Animation */
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Basic */
@@ -102,6 +105,7 @@ p {
   font-weight: 500;
   letter-spacing: 0.28px;
   color: var(--main-color);
+  transition: color var(--animation);
 }
 
 .nav-link:hover,
@@ -110,7 +114,20 @@ p {
 }
 
 .nav-link-accent {
+  position: relative;
   color: var(--accent-color);
+}
+
+.nav-link-accent::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 .contact-list {
@@ -133,15 +150,8 @@ address {
   font-weight: 500;
   letter-spacing: 0.28px;
   color: var(--txt-color);
+  transition: color var(--animation);
 }
-
-/* .contact-link::before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/icons/envelope.svg);
-} */
 
 .contact-icon {
   width: 16px;
@@ -289,6 +299,32 @@ address {
   gap: var(--indent);
 }
 
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-descr {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  /* width: 370px; */
+  width: 100%;
+  height: 70px;
+  background-color: #2f303acc;
+  backdrop-filter: blur(2px);
+  border-radius: 0px;
+}
+
+.portfolio-text {
+  font-weight: 700;
+  color: #ffffff;
+  /* text-align: center; */
+  text-transform: uppercase;
+}
+
 /* Team section */
 .team-section {
   background-color: var(--bg-grey);
@@ -342,6 +378,7 @@ address {
   border-radius: 50%;
   color: var(--icon-cl);
   /* outline: 1px solid tomato; */
+  transition: color var(--animation), background-color var(--animation);
 }
 
 .socials-link:hover,
@@ -373,6 +410,7 @@ address {
   color: var(--icon-cl);
   width: 170px;
   height: 92px;
+  transition: color var(--animation);
 }
 
 .clients-link:hover,
@@ -430,10 +468,10 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contact:hover,
+/* .footer-contact:hover,
 .footer-contact:focus {
   color: var(--accent-color);
-}
+} */
 
 .action {
   /* font-size: 14px;
@@ -475,6 +513,7 @@ address {
   color: var(--main-color);
   text-align: center;
   cursor: pointer;
+  transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
 
 .filter-btn:hover,
@@ -498,12 +537,42 @@ address {
 
 .card-item {
   flex-basis: calc((100% - (var(--items)-1) * 30px) / var(--items));
+  transition: box-shadow var(--animation);
+}
+
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--animation);
+}
+
+.card-text {
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  /* font-family: "Roboto", sans-serif; */
+  /* font-weight: 400; */
+  color: var(--white-color);
 }
 
 .card-item:hover,
 .card-item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.card-item:hover .overlay {
+  transform: translateY(0);
 }
 
 .card-wrapper {
