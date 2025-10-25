@@ -102,12 +102,103 @@ p {
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   /* opacity: 1; */
   transition: transform var(--animation);
+}
+
+.modal-title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.form-field {
+  position: relative;
+  display: block;
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: var(--txt-color);
+}
+
+.form-input {
+  padding: 12px;
+  padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--main-color);
+  outline: none;
+  transition: border-color var(--animation);
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:focus + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  /* transform: translateY(50%); */
+  display: block;
+  width: 18px;
+  height: 18px;
+  transition: fill var(--animation);
+}
+
+.form-comment {
+  width: 100%;
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 4px;
+  transition: border-color var(--animation);
+}
+
+.form-comment:focus {
+  border-color: var(--accent-color);
+}
+
+.form-comment::placeholder {
+  font-size: 12px;
+  color: var(--txt-color);
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background-color: #188ce8;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+  font-size: 16px;
+  line-height: calc(30 / 15);
+  font-weight: 700;
+  color: var(--white-color);
+  text-align: center;
+  cursor: pointer;
 }
 
 .backdrop.is-hidden .modal {
@@ -132,6 +223,11 @@ p {
   border-radius: 50%;
   cursor: pointer;
   transition: border var(--animation);
+}
+
+.close-icon {
+  width: 100%;
+  height: 100%;
 }
 
 .close-btn:hover,
