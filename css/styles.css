@@ -591,11 +591,12 @@ address {
   border: 1px solid rgb(255, 255, 255, 0.3);
   color: var(--white-color);
   font-size: 16px;
+  transition: border-color var(--animation);
 }
 
 .footer-input:focus {
-  border: 1px solid var(--white-color);
-  /* outline: transparent; */
+  border-color: var(--white-color);
+  outline: transparent;
 }
 
 .footer-input::placeholder {
