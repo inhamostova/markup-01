@@ -101,7 +101,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
-  height: 581px;
+  /* height: 581px; */
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -129,6 +129,7 @@ p {
 }
 
 .form-label {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   color: var(--txt-color);
@@ -184,6 +185,54 @@ p {
   color: var(--txt-color);
 }
 
+.agreement {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.agreement-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.agreement-icon {
+  width: 16px;
+  height: 15px;
+}
+
+.agreement-checked {
+  opacity: 0;
+}
+
+.agreement-input:checked + .agreement-icon > .agreement-checked {
+  opacity: 1;
+}
+
+.agreement-label {
+  font-size: 14;
+  line-height: calc(24 / 14);
+  user-select: none;
+  color: var(--txt-color);
+}
+
+.agreement-link {
+  text-underline-position: under;
+
+  color: var(--accent-color);
+}
+
 .modal-btn {
   display: block;
   margin: 0 auto;
@@ -199,6 +248,12 @@ p {
   color: var(--white-color);
   text-align: center;
   cursor: pointer;
+  transition: background-color var(--animation);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
 }
 
 .backdrop.is-hidden .modal {
@@ -376,6 +431,12 @@ address {
   color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  transition: background-color var(--animation);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
 }
 
 /* Advantages section */
@@ -717,6 +778,12 @@ address {
   color: var(--white-color);
   border: none;
   cursor: pointer;
+  transition: background-color var(--animation);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #188ce8;
 }
 
 .footer-icon {
