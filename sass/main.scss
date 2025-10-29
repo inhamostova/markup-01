@@ -1,0 +1,15 @@
+// Utils
+@import './utils/vars';
+
+// Base
+@import './base/common';
+@import './base/reset';
+
+// Components
+@import './components/logo';
+@import './components/nav';
+@import './components/contacts';
+
+// Sections
+@import './sections/header';
+@import './sections/hero';

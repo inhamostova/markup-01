@@ -1,0 +1,32 @@
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.78px;
+  line-height: normal;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-size: inherit;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  /* outline: 1px solid tomato; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+img {
+  display: block;
+}

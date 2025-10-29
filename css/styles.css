@@ -1,6 +1,6 @@
-:root {
-  /* Colors */
-  --main-color: #212121;
+/* :root { */
+/* Colors */
+/* --main-color: #212121;
   --txt-color: #757575;
   --white-color: #ffffff;
   --accent-color: #2196f3;
@@ -8,53 +8,53 @@
   --bg-grey: #f5f4fa;
   --border-cl: #ececec;
   --hero-bg-cl: #2f303a66;
-  --icon-cl: #afb1b8;
+  --icon-cl: #afb1b8; */
 
-  /* Grid */
-  --indent: 30px;
-  --items: 3;
+/* Grid */
+/* --indent: 30px;
+  --items: 3; */
 
-  /* Animation */
-  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+/* Animation */
+/* --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+/* } */
 
 /* Basic */
 
-body {
+/* body {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.78px;
   line-height: normal;
-}
+} */
 
-.no-scroll {
+/* .no-scroll {
   overflow: hidden;
 }
 
 .title {
   margin-bottom: 50px;
   font-size: inherit;
-}
+} */
 
-.container {
+/* .container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0 auto;
-  /* outline: 1px solid tomato; */
-}
+  margin: 0 auto; */
+/* outline: 1px solid tomato; */
+/* } */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 img {
   display: block;
-}
+} */
 
 /* Reset styles */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -73,7 +73,7 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
-}
+} */
 
 /* Modal */
 .backdrop {
@@ -291,16 +291,16 @@ p {
 }
 
 /* Header */
-.header {
+/* .header {
   border-bottom: 1px solid var(--border-cl);
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
-}
+} */
 
-.logo {
+/* .logo {
   margin-right: 93px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -310,9 +310,9 @@ p {
 
 .logo-accent {
   color: var(--accent-color);
-}
+} */
 
-.nav-list {
+/* .nav-list {
   display: flex;
   gap: 50px;
 }
@@ -347,20 +347,20 @@ p {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-}
+} */
 
-.contact-list {
+/* .contacts {
   display: flex;
   gap: 50px;
   margin-left: auto;
-}
+} */
 
 address {
   display: inline-block;
   font-style: normal;
 }
 
-.contact-link {
+/* .contact__link {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -372,26 +372,25 @@ address {
   transition: color var(--animation);
 }
 
-.contact-icon {
+.contact__icon {
   width: 16px;
   height: 12px;
   fill: currentColor;
-}
+} */
 
-.phone {
+/* .phone {
   width: 10px;
-  height: 16px;
-  /* background-image: url(../images/icons/smartphone.svg); */
-}
+  height: 16px; */
+/* } */
 
-.contact-link:hover,
-.contact-link:focus {
+/* .contact__link:hover,
+.contact__link:focus {
   cursor: pointer;
   color: var(--accent-color);
-}
+} */
 
 /* Hero section */
-.hero {
+/* .hero {
   max-width: 1600px;
   min-height: 600px;
   margin-right: auto;
@@ -406,7 +405,7 @@ address {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin: 0 auto;
   margin-bottom: 30px;
   width: 696px;
@@ -418,7 +417,7 @@ address {
   color: var(--white-color);
 }
 
-.hero-btn {
+.hero__btn {
   padding: 10px 32px;
   border-radius: 4px;
   border: none;
@@ -434,10 +433,10 @@ address {
   transition: background-color var(--animation);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: #188ce8;
-}
+} */
 
 /* Advantages section */
 

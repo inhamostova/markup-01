@@ -18,32 +18,35 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header-container">
-        <a class="logo link" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
-        <nav>
-          <ul class="nav-list list">
-            <li><a class="nav-link link" href="./index.html">Студія</a></li>
-            <li><a class="nav-link nav-link-accent link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="nav-link link" href="">Контакти</a></li>
+      <div class="container header__container">
+        <a class="logo link" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li><a class="nav__link link" href="./index.html">Студія</a></li>
+            <li>
+              <a class="nav__link nav__link--accent link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li><a class="nav__link link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contact-list list">
-          <li>
-            <a class="contact-link link" href="mailto:info@devstudio.com">
-              <svg class="contact-icon" width="16" height="12">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contact__link link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="contact-link link" href="tel:+380961111111">
-              <svg class="contact-icon phone" width="16" height="12">
+          <li class="contacts__item">
+            <a class="contact__link link" href="tel:+380961111111">
+              <svg class="contact__icon phone">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
