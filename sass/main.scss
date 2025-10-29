@@ -1,5 +1,6 @@
 // Utils
 @import './utils/vars';
+@import './utils/visually-hidden';
 
 // Base
 @import './base/common';
@@ -9,7 +10,20 @@
 @import './components/logo';
 @import './components/nav';
 @import './components/contacts';
+@import './components/socials';
+@import './components/subscribe-from';
+@import './components/address';
+@import './components/filter';
+@import './components/card-set';
+@import './components/close-btn';
+@import './components/modal-form';
 
 // Sections
 @import './sections/header';
 @import './sections/hero';
+@import './sections/advantages';
+@import './sections/portfolio';
+@import './sections/team';
+@import './sections/clients';
+@import './sections/footer';
+@import './sections/modal';
