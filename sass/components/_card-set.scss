@@ -5,7 +5,7 @@
 }
 
 .card-set__item {
-  flex-basis: calc((100% - (var(--items)-1) * 30px) / var(--items));
+  flex-basis: calc((100% - (var(--items) - 1) * 30px) / var(--items));
   transition: box-shadow var(--animation);
 }
 

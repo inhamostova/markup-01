@@ -1,9 +1,11 @@
+@import '../utils/placeholders';
+
 .portfolio {
   padding-top: 0;
 }
 
-.portfolio__title,
-.team-title {
+.portfolio__title {
+  @extend %title;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;

@@ -4,8 +4,8 @@
   font-weight: 700;
   font-size: 26px;
   color: var(--black-color);
-}
 
-.logo--accent {
-  color: var(--accent-color);
+  &--accent {
+    color: var(--accent-color);
+  }
 }

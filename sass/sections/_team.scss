@@ -2,6 +2,15 @@
   background-color: var(--bg-grey);
 }
 
+// .team__title {
+//   @extend %title;
+//   font-size: 36px;
+//   font-weight: 700;
+//   letter-spacing: 1.08px;
+//   color: var(--main-color);
+//   text-align: center;
+// }
+
 .team__list {
   display: flex;
   gap: var(--indent);
