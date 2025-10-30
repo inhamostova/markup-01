@@ -1,11 +1,9 @@
 .advantages__list {
-  // display: flex;
-  // gap: var(--indent);
   @extend %list;
 }
 
 .advantages__item {
-  flex-basis: calc((100% - ((var(--items) - 1)) * var(--indent)) / var(--items));
+  @include flexBasis(var(--indent), var(--items));
 }
 
 .advantages__thumb {

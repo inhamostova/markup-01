@@ -2,18 +2,8 @@
   padding-top: 0;
 }
 
-// .portfolio__title {
-//   font-size: 36px;
-//   font-weight: 700;
-//   letter-spacing: 1.08px;
-//   color: var(--main-color);
-//   text-align: center;
-// }
-
 .portfolio__list {
   @extend %list;
-  // display: flex;
-  // gap: var(--indent);
 }
 
 .portfolio__item {

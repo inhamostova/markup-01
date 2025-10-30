@@ -1,0 +1,3 @@
+@mixin flexBasis($gap, $items) {
+  flex-basis: calc((100% - (($items - 1)) * $gap) / $items);
+}

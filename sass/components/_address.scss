@@ -6,7 +6,7 @@
 
 .address__link {
   line-height: calc(24 / 14);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   letter-spacing: 0.42px;
   color: var(--white-color);

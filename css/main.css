@@ -12,6 +12,8 @@
   /* Grid */
   --indent: 30px;
   --items: 3;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   /* Animation */
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -38,7 +40,7 @@
 
 body {
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   letter-spacing: 0.78px;
   line-height: normal;
 }
@@ -97,7 +99,7 @@ img {
 
 .logo {
   margin-right: 93px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   color: var(--black-color);
@@ -217,7 +219,6 @@ img {
   height: 44px;
   border-radius: 50%;
   color: var(--icon-cl);
-  /* outline: 1px solid tomato; */
   -webkit-transition: color var(--animation), background-color var(--animation);
   transition: color var(--animation), background-color var(--animation);
 }
@@ -248,7 +249,6 @@ img {
   width: 358px;
   height: 50px;
   background-color: rgba(33, 150, 243, 0);
-  /* background-color: #2f303a; */
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -331,7 +331,7 @@ img {
 
 .address__link {
   line-height: 1.7142857143;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   letter-spacing: 0.42px;
   color: var(--white-color);
@@ -354,7 +354,7 @@ img {
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.625;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-weight: 500;
   letter-spacing: 0.48px;
   background-color: var(--bg-grey);
@@ -383,8 +383,8 @@ img {
 }
 
 .card-set__item {
-  -ms-flex-preferred-size: calc((100% - (var(--items) - 1) * 30px) / var(--items));
-      flex-basis: calc((100% - (var(--items) - 1) * 30px) / var(--items));
+  -ms-flex-preferred-size: calc((100% - (var(--items) - 1) * var(--indent)) / var(--items));
+      flex-basis: calc((100% - (var(--items) - 1) * var(--indent)) / var(--items));
   -webkit-transition: -webkit-box-shadow var(--animation);
   transition: -webkit-box-shadow var(--animation);
   transition: box-shadow var(--animation);
@@ -524,7 +524,6 @@ img {
   position: absolute;
   left: 12px;
   bottom: 11px;
-  /* transform: translateY(50%); */
   display: block;
   width: 18px;
   height: 18px;
@@ -694,7 +693,7 @@ img {
   border: none;
   font-size: 16px;
   line-height: 1.875;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-weight: 700;
   letter-spacing: 0.96px;
   background-color: var(--accent-color);
@@ -935,6 +934,10 @@ img {
   transition: transform var(--animation);
   transition: transform var(--animation), -webkit-transform var(--animation);
 }
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+          transform: translate(-50%, -50%) scale(1.2);
+}
 
 .modal__title {
   margin-bottom: 12px;
@@ -942,9 +945,4 @@ img {
   font-weight: 700;
   color: var(--main-color);
   text-align: center;
-}
-
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(1.2);
-          transform: translate(-50%, -50%) scale(1.2);
 }/*# sourceMappingURL=main.css.map */

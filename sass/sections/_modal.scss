@@ -30,6 +30,10 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
 
   transition: transform var(--animation);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
 }
 
 .modal__title {
@@ -38,8 +42,4 @@
   font-weight: 700;
   color: var(--main-color);
   text-align: center;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.2);
 }

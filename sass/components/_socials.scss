@@ -13,12 +13,10 @@
   height: 44px;
   border-radius: 50%;
   color: var(--icon-cl);
-  /* outline: 1px solid tomato; */
   transition: color var(--animation), background-color var(--animation);
 
   &--dark {
     background-color: #ffffff1a;
-    // background-repeat: 50%;
     color: var(--white-color);
   }
 

@@ -1,19 +1,8 @@
 .clients__list {
-  // display: flex;
-  // gap: var(--indent);
   @extend %list;
   justify-content: center;
   align-items: center;
 }
-
-// .clients__title {
-//   margin-bottom: 50px;
-//   font-size: 36px;
-//   font-weight: 700;
-//   letter-spacing: 1.08px;
-//   color: var(--main-color);
-//   text-align: center;
-// }
 
 .clients__link {
   display: flex;
