@@ -16,14 +16,14 @@
   border-radius: 50%;
   cursor: pointer;
   transition: border var(--animation);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .close-btn__icon {
   width: 100%;
   height: 100%;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  border: 1px solid var(--accent-color);
 }

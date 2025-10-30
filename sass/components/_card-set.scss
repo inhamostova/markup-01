@@ -1,12 +1,17 @@
 .card-set {
-  display: flex;
-  gap: var(--indent);
+  @extend %list;
   flex-wrap: wrap;
 }
 
 .card-set__item {
   flex-basis: calc((100% - (var(--items) - 1) * 30px) / var(--items));
   transition: box-shadow var(--animation);
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .card-set__thumb {
@@ -24,6 +29,10 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--animation);
+
+  .card-set__item:hover & {
+    transform: translateY(0);
+  }
 }
 
 .card-set__descr {
@@ -31,16 +40,6 @@
   line-height: calc(28 / 18);
   color: var(--white-color);
   user-select: none;
-}
-
-.card-set__item:hover,
-.card-set__item:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-.card-set__item:hover .card-set__overlay {
-  transform: translateY(0);
 }
 
 .card-set__wrapper {

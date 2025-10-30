@@ -1,6 +1,7 @@
 .clients__list {
-  display: flex;
-  gap: var(--indent);
+  // display: flex;
+  // gap: var(--indent);
+  @extend %list;
   justify-content: center;
   align-items: center;
 }
@@ -24,12 +25,12 @@
   width: 170px;
   height: 92px;
   transition: color var(--animation);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  color: var(--accent-color);
-  border-color: currentColor;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: currentColor;
+  }
 }
 
 .clients__icon {

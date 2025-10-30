@@ -15,18 +15,18 @@
   color: var(--icon-cl);
   /* outline: 1px solid tomato; */
   transition: color var(--animation), background-color var(--animation);
-}
 
-.socials__link--dark {
-  background-color: #ffffff1a;
-  // background-repeat: 50%;
-  color: var(--white-color);
-}
+  &--dark {
+    background-color: #ffffff1a;
+    // background-repeat: 50%;
+    color: var(--white-color);
+  }
 
-.socials__link:hover,
-.socials__link:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
 }
 
 .socials__icon {

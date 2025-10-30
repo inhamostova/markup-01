@@ -12,8 +12,9 @@
 // }
 
 .team__list {
-  display: flex;
-  gap: var(--indent);
+  @extend %list;
+  // display: flex;
+  // gap: var(--indent);
 }
 
 .team__item {
@@ -40,5 +41,5 @@
   margin-bottom: 16px;
   font-size: 16px;
   letter-spacing: 0.48px;
-  color: #757575;
+  color: var(--txt-color);
 }

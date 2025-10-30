@@ -1,7 +1,7 @@
 // Utils
 @import './utils/vars';
 @import './utils/visually-hidden';
-// @import './utils/placeholders';
+@import './utils/placeholders';
 
 // Base
 @import './base/common';
@@ -13,7 +13,7 @@
 @import './components/nav';
 @import './components/contacts';
 @import './components/socials';
-@import './components/subscribe-from';
+@import './components/subscribe-form';
 @import './components/address';
 @import './components/filter';
 @import './components/card-set';

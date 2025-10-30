@@ -1,10 +1,10 @@
 .modal-form__field {
   position: relative;
   display: block;
-}
 
-.modal-form__field:not(:last-child) {
-  margin-bottom: 10px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .modal-form__label {
@@ -23,14 +23,10 @@
   border: 1px solid var(--main-color);
   outline: none;
   transition: border-color var(--animation);
-}
 
-.modal-form__input:focus {
-  border-color: var(--accent-color);
-}
-
-.modal-form__input:focus + .modal-form__icon {
-  fill: var(--accent-color);
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form__icon {
@@ -42,6 +38,10 @@
   width: 18px;
   height: 18px;
   transition: fill var(--animation);
+
+  .modal-form__input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form__comment {
@@ -53,15 +53,15 @@
   outline: none;
   border-radius: 4px;
   transition: border-color var(--animation);
-}
 
-.modal-form__comment:focus {
-  border-color: var(--accent-color);
-}
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-.modal-form__comment::placeholder {
-  font-size: 12px;
-  color: var(--txt-color);
+  &::placeholder {
+    font-size: 12px;
+    color: var(--txt-color);
+  }
 }
 
 .agreement {
@@ -128,9 +128,9 @@
   text-align: center;
   cursor: pointer;
   transition: background-color var(--animation);
-}
 
-.modal__btn:hover,
-.modal__btn:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }

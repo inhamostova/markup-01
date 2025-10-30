@@ -8,4 +8,12 @@
   &--accent {
     color: var(--accent-color);
   }
+
+  .footer & {
+    max-width: 145px;
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+    color: var(--white-color);
+  }
 }
