@@ -51,6 +51,37 @@
             >
           </li>
         </ul>
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+        <div class="menu-overlay" data-menu>
+          <div class="content">
+            <button class="menu-btn menu-btn--right" type="button" data-menu-close>
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#menu-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul>
+                <li><a href="">Студія</a></li>
+                <li><a href="">Портфоліо</a></li>
+                <li><a href="">Контакти</a></li>
+              </ul>
+            </nav>
+            <ul>
+              <li><a href="">+38 096 111 11 11</a></li>
+              <li><a href="">info@devstudio.com</a></li>
+            </ul>
+            <ul>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -165,12 +196,22 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                src="./images/team/team-member-1.jpg"
-                alt="Член команди 1"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/img1@1x_desk.jpg 1x, ./images/team/img1@2x_desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/img1@1x_tab.jpg 1x, ./images/team/img1@2x_tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/img1@1x_mob.jpg 1x, ./images/team/img1@2x_mob.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/team/img1@1x_desk.jpg" alt="" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__txt">Product Designer</p>
@@ -207,12 +248,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/team-member-2.jpg"
-                alt="Член команди 2"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/img2@1x_desk.jpg 1x, ./images/team/img2@2x_desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/img2@1x_tab.jpg 1x, ./images/team/img2@2x_tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/img2@1x_mob.jpg 1x, ./images/team/img2@2x_mob.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/team/img2@1x_desk.jpg" alt="" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__txt">Frontend Developer</p>
@@ -249,12 +300,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/team-member-3.jpg"
-                alt="Член команди 3"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/img3@1x_desk.jpg 1x, ./images/team/img3@2x_desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/img3@1x_tab.jpg 1x, ./images/team/img3@2x_tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/img3@1x_mob.jpg 1x, ./images/team/img3@2x_mob.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/team/img3@1x_desk.jpg" alt="" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__txt">Marketing</p>
@@ -291,12 +352,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/team-member-4.jpg"
-                alt="Член команди 4"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/img4@1x_desk.jpg 1x, ./images/team/img4@2x_desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/img4@1x_tab.jpg 1x, ./images/team/img4@2x_tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/img4@1x_mob.jpg 1x, ./images/team/img4@2x_mob.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/team/img4@1x_desk.jpg" alt="" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__txt">UI Designer</p>
@@ -530,5 +601,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

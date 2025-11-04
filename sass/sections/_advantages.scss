@@ -1,9 +1,23 @@
 .advantages__list {
   @extend %list;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .advantages__item {
+  --items: 1;
   @include flexBasis(var(--indent), var(--items));
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+  }
 }
 
 .advantages__thumb {
@@ -29,6 +43,10 @@
   text-transform: uppercase;
   letter-spacing: 0.42px;
   color: var(--main-color);
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .advantages__txt {

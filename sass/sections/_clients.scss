@@ -2,16 +2,31 @@
   @extend %list;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.clients__item {
+  --items: 2;
+  @include flexBasis(var(--indent), var(--items));
+
+  @media screen and (min-width: 768px) {
+    --items: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 6;
+  }
 }
 
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid currentColor;
   color: var(--icon-cl);
-  width: 170px;
+  // width: 170px;
   height: 92px;
   transition: color var(--animation);
 
