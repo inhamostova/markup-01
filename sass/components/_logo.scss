@@ -15,10 +15,23 @@
   }
 
   .footer & {
+    // margin-right: auto;
+    // margin-left: auto;
     max-width: 145px;
     display: block;
     margin-bottom: 20px;
-    margin-right: 0;
+    // margin-right: 0;
     color: var(--white-color);
+
+    @media screen and (max-width: 1199px) {
+      margin-right: auto;
+      margin-left: auto;
+      // text-align: center;
+    }
+
+    // @media screen and (min-width: 768px) {
+    //   margin-right: auto;
+    //   margin-left: auto;
+    // }
   }
 }
