@@ -4,6 +4,7 @@
 }
 
 .card-set__item {
+  --items: 1;
   @include flexBasis(var(--indent), var(--items));
   transition: box-shadow var(--animation);
 
@@ -11,6 +12,14 @@
   &:focus {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 3;
   }
 }
 

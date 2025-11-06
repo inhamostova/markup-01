@@ -2,15 +2,21 @@
   display: flex;
   gap: 50px;
   margin-left: auto;
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .contact__link {
   display: flex;
   gap: 10px;
   align-items: center;
-  padding-top: 31px;
-  padding-bottom: 32px;
+
   font-weight: 500;
   letter-spacing: 0.28px;
   color: var(--txt-color);
@@ -20,6 +26,15 @@
   &:focus {
     cursor: pointer;
     color: var(--accent-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 31px;
+    padding-bottom: 32px;
   }
 }
 

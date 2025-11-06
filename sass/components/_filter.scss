@@ -2,7 +2,12 @@
   display: flex;
   gap: 8px;
   margin-bottom: 50px;
-  justify-content: center;
+
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filter__btn {

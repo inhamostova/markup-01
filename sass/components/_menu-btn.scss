@@ -5,11 +5,22 @@
   margin-left: auto;
   border: none;
   background-color: transparent;
+  transition: color var(--animation);
+  cursor: pointer;
 
-  &--right {
+  &--close {
     position: absolute;
     top: 10px;
     right: 15px;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    & svg {
+      fill: currentColor;
+    }
   }
 
   @media screen and (min-width: 768px) {
